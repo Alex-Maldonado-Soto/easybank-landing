@@ -4,6 +4,7 @@ $sureColor: #fff;
 $fontTitle: "Bellefair", serif;
 $font-text: "Barlow Condensed", sans-serif;
 
+
 @mixin textAttribute($text-typo, $text-size, $text-color) {
   font-family: $text-typo;
   font-size: $text-size;
