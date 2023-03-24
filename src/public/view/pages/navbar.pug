@@ -1,1 +1,22 @@
-h1 Hola, Aqui FUnciona pug
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var navbars = ["Home", "About", "Contact", "Blog", "Careers"]
+
+nav.navbar
+
+    picture.navbar__logo 
+        img(src="images/logo.svg", alt="Ir al inicio")
+
+    ul.navbar__list
+        each navbar in navbars
+            li.navbar__list--item
+               a.navbar__list--itemLink(href="http://")=navbar
+
+    picture.navbar__menu 
+        img.navbar__menu--open(src="images/icon-hamburger.svg", alt="Abrir menu")
+        img.navbar__menu--close(src="images/icon-close.svg", alt="Cerrar menu")
+
+    button.navbar__button Request Invite 
+
+
+
+
