@@ -9,4 +9,47 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.navbar {
+  background-color: #fff;
+  z-index: 150;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__background {
+  position: fixed;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(49, 49, 76, 0.631372549), rgba(165, 164, 169, 0.2392156863));
+  width: 100vw;
+  height: 100vh;
+}
+.navbar__list {
+  display: flex;
+  z-index: 200;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  list-style: none;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 90vw;
+  height: 40vh;
+  justify-content: space-evenly;
+}
+.navbar__list--itemLink {
+  text-decoration: none;
+  color: #31314c;
+}
+.navbar__menu--close {
+  display: none;
+}
+.navbar__button {
+  display: none;
+}
+
 /*# sourceMappingURL=mobile.css.map */

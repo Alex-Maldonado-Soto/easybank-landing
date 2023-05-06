@@ -1,9 +1,11 @@
-$darkColor: #0b0d17;
-$secondaryColor: #d0d6f9;
-$sureColor: #fff;
+$darkColor: #31314c;
+$gray-color: #a5a4a9;
+$primary-color: #33cf7c;
+$secundary-color: #2dc0ad;
+$primary-sure-color: #f9f9f9;
+$secundary-sure-color: #fff;
 $fontTitle: "Bellefair", serif;
 $font-text: "Barlow Condensed", sans-serif;
-
 
 @mixin textAttribute($text-typo, $text-size, $text-color) {
   font-family: $text-typo;
