@@ -1,54 +1,55 @@
 .navbar {
-    background-color: $secundary-sure-color;
-    z-index: 150;
-    width: 100%;
-    padding: 20px;
-    display: flex;
+  background-color: $secundary-sure-color;
+  font-size: 18px;
+  z-index: 150;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+
+  &__background {
     position: fixed;
+    z-index: 100;
+    background: linear-gradient(to bottom, #31314ca1, #a5a4a93d);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__logo {
+  }
+
+  &__list {
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    z-index: 200;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    list-style: none;
+    position: fixed;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    background: $secundary-sure-color;
+    width: 90vw;
+    height: 40vh;
+    justify-content: space-evenly;
+    display: none;
 
-    &__background {
-        position: fixed;
-        z-index: 100;
-        background: linear-gradient(to bottom, #31314ca1, #a5a4a93d);
-        width: 100vw;
-        height: 100vh;
+    &--itemLink {
+      text-decoration: none;
+      color: $darkColor;
     }
+  }
 
-    &__logo {
-  
-    }
-  
-    &__list {
-        display: flex;
-        z-index: 200;
-        top: 10%;
-        left: 5%;
-        right: 5%;
-        list-style: none;
-        position: fixed;
-        flex-direction: column;
-        align-items: center;
-        background: $secundary-sure-color;
-        width: 90vw;
-        height: 40vh;
-        justify-content: space-evenly;
-
-        &--itemLink {
-            text-decoration: none;
-            color: $darkColor;
-        }
-
-    }
-  
-    &__menu {
-      &--close {
-        display: none;
-      }
-    }
-    &__button {
+  &__menu {
+    &--close {
       display: none;
     }
   }
-  
+  &__button {
+    display: none;
+  }
+}
