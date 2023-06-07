@@ -1,23 +1,55 @@
 .header {
-    &__pictureContainer {
-        &--background  {
 
-        }
-        &--mockups {
-    
-        }
+  background-color: $primary-sure-color;
+
+  &__pictureContainer {
+    height: 100%;
+
+    &--background {
+      display: block;
+      width: 100vw;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
-
-    &__text {
-        &--subtitle {
-
-        }
-        &--paragraph {
-
-        }
-        &--button {
-            
-        }
+    &--mockups {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      right: 0%;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
-} 
+  }
 
+  &__text {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 24px;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    align-content: space-around;
+
+    &--subtitle {
+      @include textAttribute($fontTitle, 3rem, $darkColor, 300);
+    }
+    &--paragraph {
+      @include textAttribute($font-text, 1.8rem, $gray-color, 400);
+    }
+    &--button {
+      @include textAttribute($font-text, 1.4rem, $secundary-sure-color, 700);
+      border: none;
+      text-align: center;
+      border-radius: 50px;
+      padding: 18px 36px;
+      color: #fff;
+      background: linear-gradient(88deg, rgb(49,209,99, 1) 1%, rgb(42,162,186, 1)100%);
+    }
+  }
+}

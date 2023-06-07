@@ -10,6 +10,7 @@
   justify-content: space-between;
 
   &__background {
+    display: none;
     position: fixed;
     z-index: 100;
     background: linear-gradient(to bottom, #31314ca1, #a5a4a93d);

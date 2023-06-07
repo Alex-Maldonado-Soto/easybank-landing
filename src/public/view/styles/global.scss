@@ -7,16 +7,18 @@ $secundary-sure-color: #fff;
 $fontTitle: "Bellefair", serif;
 $font-text: "Barlow Condensed", sans-serif;
 
-@mixin textAttribute($text-typo, $text-size, $text-color) {
+@mixin textAttribute($text-typo, $text-size, $text-color, $text-weight) {
   font-family: $text-typo;
   font-size: $text-size;
   color: $text-color;
+  font-weight: $text-weight;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
