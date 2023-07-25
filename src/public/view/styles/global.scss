@@ -4,8 +4,10 @@ $primary-color: #33cf7c;
 $secundary-color: #2dc0ad;
 $primary-sure-color: #f9f9f9;
 $secundary-sure-color: #fff;
-$fontTitle: "Bellefair", serif;
-$font-text: "Barlow Condensed", sans-serif;
+$fontTitle: "Bellefair",
+serif;
+$font-text: "Barlow Condensed",
+sans-serif;
 
 @mixin textAttribute($text-typo, $text-size, $text-color, $text-weight) {
   font-family: $text-typo;
@@ -24,4 +26,22 @@ $font-text: "Barlow Condensed", sans-serif;
 body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  @include textAttribute($font-text, 4.5rem, $darkColor, 300);
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  @include textAttribute($font-text, 1.6rem, $gray-color, 400);
 }

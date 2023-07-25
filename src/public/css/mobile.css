@@ -10,6 +10,30 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.5rem;
+  color: #31314c;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #a5a4a9;
+  font-weight: 400;
+}
+
 .navbar {
   background-color: #fff;
   font-size: 18px;
@@ -91,18 +115,6 @@ body {
   text-align: center;
   justify-items: center;
   align-content: space-around;
-}
-.header__text--subtitle {
-  font-family: "Bellefair", serif;
-  font-size: 3rem;
-  color: #31314c;
-  font-weight: 300;
-}
-.header__text--paragraph {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.8rem;
-  color: #a5a4a9;
-  font-weight: 400;
 }
 .header__text--button {
   font-family: "Barlow Condensed", sans-serif;

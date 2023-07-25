@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js ",
-    "compileSass": "sass --watch ./src/public/view/index.scss ./src/public/css/style.css"
+    "compileSass": "sass --watch ./src/public/view/mobile.scss ./src/public/css/mobile.css"
   },
   "author": "maldexander",
   "license": "ISC",

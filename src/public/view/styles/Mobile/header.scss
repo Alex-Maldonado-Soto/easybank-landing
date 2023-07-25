@@ -36,12 +36,6 @@
     justify-items: center;
     align-content: space-around;
 
-    &--subtitle {
-      @include textAttribute($fontTitle, 3rem, $darkColor, 300);
-    }
-    &--paragraph {
-      @include textAttribute($font-text, 1.8rem, $gray-color, 400);
-    }
     &--button {
       @include textAttribute($font-text, 1.4rem, $secundary-sure-color, 700);
       border: none;
