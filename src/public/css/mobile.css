@@ -129,4 +129,17 @@ p {
   background: linear-gradient(88deg, rgb(49, 209, 99) 1%, rgb(42, 162, 186) 100%);
 }
 
+.characteristics {
+  width: 100vw;
+  padding: 151px 30px;
+  text-align: center;
+}
+.characteristics p, .characteristics img {
+  margin: 25px 0px;
+}
+.characteristics__cards {
+  display: grid;
+  justify-items: center;
+}
+
 /*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,16 @@
+.characteristics {
+    width: 100vw;
+    padding: 151px 30px;
+    text-align: center;
+
+    p, img {
+        margin: 25px 0px;
+    }
+
+    &__cards {
+
+    display: grid;
+    justify-items: center;
+
+    }
+}
