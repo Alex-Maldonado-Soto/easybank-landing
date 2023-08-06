@@ -45,3 +45,8 @@ h3 {
 p {
   @include textAttribute($font-text, 1.6rem, $gray-color, 400);
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}

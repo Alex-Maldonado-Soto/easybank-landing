@@ -1,0 +1,23 @@
+.articles {
+    width: 100vw;
+
+    &__title {
+        text-align: center;
+    }
+    &__cards {
+        text-align: left;
+        &--img{
+            margin: 30px;
+        }
+        &--title{
+
+        }
+        &--parraf {
+
+        }
+        &--creators{
+            color: $gray-color;
+            display: block;
+        }
+    }
+}
