@@ -4,20 +4,39 @@
     &__title {
         text-align: center;
     }
+
     &__cards {
+        width: 100vw;
         text-align: left;
-        &--img{
+
+        &--img {
             margin: 30px;
         }
-        &--title{
 
-        }
-        &--parraf {
+        &Container {
+            display: grid;
+            gap: 15px;
+            padding: 0px 55px;
+            &--title {
+                @include textAttribute($font-text, 1.8rem, $darkColor, 300);
+                text-decoration: none;
 
+                &:focus {
+                    color: $primary-color;
+                }
+
+            }         
+
+            &--parraf {
+                font-size: 1.4rem;
+            }
+
+            &--creators {
+                font-size: 1rem;
+                color: $gray-color;
+                display: block;
+            }
         }
-        &--creators{
-            color: $gray-color;
-            display: block;
-        }
+
     }
 }

@@ -154,12 +154,32 @@ img {
   text-align: center;
 }
 .articles__cards {
+  width: 100vw;
   text-align: left;
 }
 .articles__cards--img {
   margin: 30px;
 }
-.articles__cards--creators {
+.articles__cardsContainer {
+  display: grid;
+  gap: 15px;
+  padding: 0px 55px;
+}
+.articles__cardsContainer--title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: #31314c;
+  font-weight: 300;
+  text-decoration: none;
+}
+.articles__cardsContainer--title:focus {
+  color: #33cf7c;
+}
+.articles__cardsContainer--parraf {
+  font-size: 1.4rem;
+}
+.articles__cardsContainer--creators {
+  font-size: 1rem;
   color: #a5a4a9;
   display: block;
 }
