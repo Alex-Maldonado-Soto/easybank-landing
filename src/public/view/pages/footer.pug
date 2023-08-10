@@ -1,0 +1,17 @@
+-var footerIcons = []
+-var footerIconsNames = []
+
+footer.footer 
+    figure.footer__img
+        img(src="images/logo.svg", alt="")
+    ul.footer__listLinks
+        -for(let i = 0; i < 5; i++)
+            li.footer__listLinks--items
+                a(href="")
+                    img(src="images/"+ footerIcons[i], alt="ir a"+ footerIconsNames[i] + "de easybank")
+    ul.footer__listNav
+        each navbar in navbarNavbars
+            li.footer__listNav--item
+               a(href="http://")=navbar
+    button.footer__button Request Invite 
+    spam.footer__copyright © Easybank. All Rights Reserved
