@@ -184,4 +184,11 @@ img {
   display: block;
 }
 
+.footer {
+  background-color: #31314c;
+}
+.footer #logoLetter {
+  fill: #fff;
+}
+
 /*# sourceMappingURL=mobile.css.map */
