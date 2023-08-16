@@ -50,3 +50,13 @@ img {
   width: 100%;
   height: 100%;
 }
+
+button {
+  @include textAttribute($font-text, 1.4rem, $secundary-sure-color, 700);
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 18px 36px;
+  color: #fff;
+  background: linear-gradient(88deg, rgb(49,209,99, 1) 1%, rgb(42,162,186, 1)100%);
+}

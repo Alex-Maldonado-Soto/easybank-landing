@@ -1,5 +1,4 @@
--var footerIcons = []
--var footerIconsNames = []
+-var footerIconsNames = ["facebook", "youtube", "twitter", "pinterest", "instagram"]
 
 footer.footer 
     figure.footer__img
@@ -7,8 +6,9 @@ footer.footer
     ul.footer__listLinks
         -for(let i = 0; i < 5; i++)
             li.footer__listLinks--items
-                a(href="")
-                    img(src="images/"+ footerIcons[i], alt="ir a"+ footerIconsNames[i] + "de easybank")
+                a(href="")  
+                    figure 
+                        img(src="images/icon-"+ footerIconsNames[i]+ ".svg", alt="ir a "+ footerIconsNames[i] + " de easybank")
     ul.footer__listNav
         each navbar in navbarNavbars
             li.footer__listNav--item

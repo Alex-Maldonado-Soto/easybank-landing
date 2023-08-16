@@ -37,13 +37,8 @@
     align-content: space-around;
 
     &--button {
-      @include textAttribute($font-text, 1.4rem, $secundary-sure-color, 700);
-      border: none;
       text-align: center;
-      border-radius: 50px;
       padding: 18px 36px;
-      color: #fff;
-      background: linear-gradient(88deg, rgb(49,209,99, 1) 1%, rgb(42,162,186, 1)100%);
     }
   }
 }
