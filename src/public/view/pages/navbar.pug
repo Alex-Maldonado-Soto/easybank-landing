@@ -1,20 +1,20 @@
 -var navbarNavbars = ["Home", "About", "Contact", "Blog", "Careers"]
 
-  .navbar__background
+  .navbar__background#backgroundNav
 
 nav.navbar
 
     picture.navbar__logo 
         img(src="images/logo.svg", alt="Ir al inicio")
 
-    ul.navbar__list
+    ul.navbar__list#nav
         each navbar in navbarNavbars
             li.navbar__list--item
                a.navbar__list--itemLink(href="http://")=navbar
 
-    picture.navbar__menu 
-        img.navbar__menu--open(src="images/icon-hamburger.svg", alt="Abrir menu")
-        img.navbar__menu--close(src="images/icon-close.svg", alt="Cerrar menu")
+    figure.navbar__menu 
+        img.navbar__menu--open(src="images/icon-hamburger.svg", alt="Abrir menu")#openNav
+        img.navbar__menu--close(src="images/icon-close.svg", alt="Cerrar menu")#closeNav
 
     button.navbar__button Request Invite 
 

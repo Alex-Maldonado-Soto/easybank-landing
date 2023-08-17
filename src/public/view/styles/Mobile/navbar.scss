@@ -10,12 +10,12 @@
   justify-content: space-between;
 
   &__background {
-    display: none;
     position: fixed;
     z-index: 100;
     background: linear-gradient(to bottom, #31314ca1, #a5a4a93d);
     width: 100vw;
     height: 100vh;
+    display: none;
   }
 
   &__list {
@@ -34,19 +34,29 @@
     width: 90vw;
     height: 40vh;
     justify-content: space-evenly;
-    display: none;
+
 
     &--itemLink {
       text-decoration: none;
       color: $darkColor;
+      font-size: 1.6rem;
     }
   }
 
-  &__menu {
-    &--close {
+
+    #closeNav {
       display: none;
     }
-  }
+    #openNav {
+      display: inherit;
+    }
+    #backgroundNav {
+      display: none;
+    }
+    #nav {
+      display: none;
+    }
+  
   &__button {
     display: none;
   }
