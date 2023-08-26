@@ -1,0 +1,50 @@
+.navbar {
+  background-color: $secundary-sure-color;
+  font-size: 18px;
+  z-index: 150;
+  width: 100%;
+  padding: 19px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+  &__list {
+    font-size: 18px;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    &--itemLink {
+      text-decoration: none;
+      color: $gray-color;
+      font-size: 1.6rem;
+    }
+    &--itemLink:hover {
+      color: $darkColor;
+    }
+    &--itemLink:hover::before {
+      content: "";
+      background: linear-gradient(88deg, rgb(49,209,99, 1) 1%, rgb(42,162,186, 1)100%);
+      position: absolute;
+      padding: 3px 30px;
+      margin-top: 47px;
+      margin-left: -7px;
+    }
+
+
+  }
+
+  #closeNav {
+    display: none;
+  }
+
+  #openNav {
+    display: none;
+  }
+
+}

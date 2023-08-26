@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.5rem;
+  color: #31314c;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #a5a4a9;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 18px 36px;
+  color: #fff;
+  background: linear-gradient(88deg, rgb(49, 209, 99) 1%, rgb(42, 162, 186) 100%);
+}
+
+button:hover {
+  filter: opacity(60%);
+}
+
+.navbar {
+  background-color: #fff;
+  font-size: 18px;
+  z-index: 150;
+  width: 100%;
+  padding: 19px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar__list {
+  font-size: 18px;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar__list--itemLink {
+  text-decoration: none;
+  color: #a5a4a9;
+  font-size: 1.6rem;
+}
+.navbar__list--itemLink:hover {
+  color: #31314c;
+}
+.navbar__list--itemLink:hover::before {
+  content: "";
+  background: linear-gradient(88deg, rgb(49, 209, 99) 1%, rgb(42, 162, 186) 100%);
+  position: absolute;
+  padding: 3px 30px;
+  margin-top: 47px;
+  margin-left: -7px;
+}
+.navbar #closeNav {
+  display: none;
+}
+.navbar #openNav {
+  display: none;
+}
+
+/*# sourceMappingURL=desktop.css.map */
