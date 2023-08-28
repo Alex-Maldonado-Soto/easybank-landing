@@ -2,10 +2,12 @@ main
     header.header
         .header__pictureContainer
             picture.header__pictureContainer--background 
+                <source srcset="images/bg-intro-desktop.svg" media="(min-width: 767px)" />
                 img(src="images/bg-intro-mobile.svg" alt="")
-            picture.header__pictureContainer--mockups
+            figure.header__pictureContainer--mockups
                 img(src="images/image-mockups.png" alt="")
         .header__text 
             h2.header__text--subtitle Next generation digital banking
             p.header__text--paragraph Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving , budfeting, investing, and much more
             button.header__text--button Request Invite 
+            

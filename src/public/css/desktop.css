@@ -67,6 +67,9 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
 }
+.navbar__menu {
+  display: none;
+}
 .navbar__list {
   font-size: 18px;
   display: flex;
@@ -96,6 +99,39 @@ button:hover {
 }
 .navbar #openNav {
   display: none;
+}
+
+.header {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(4, 25%);
+  background-color: #f9f9f9;
+}
+.header__pictureContainer {
+  top: -177px;
+  right: -150px;
+  display: grid;
+  grid-column: 5/9;
+  grid-row: 1/4;
+}
+.header__pictureContainer--background {
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+.header__pictureContainer--mockups {
+  grid-column: 2/4;
+  grid-row: 2/5;
+}
+.header__text {
+  grid-column: 1/4;
+  grid-row: 2/2;
+  display: grid;
+  grid-gap: 20px;
+  padding-left: 150px;
+  text-align: left;
+  justify-items: left;
+  align-content: space-around;
 }
 
 /*# sourceMappingURL=desktop.css.map */
