@@ -52,6 +52,15 @@ button {
   background: linear-gradient(88deg, rgb(49, 209, 99) 1%, rgb(42, 162, 186) 100%);
 }
 
+button:hover {
+  filter: opacity(60%);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
 .navbar {
   background-color: #fff;
   font-size: 18px;
@@ -119,10 +128,6 @@ button {
   display: block;
   width: 100vw;
 }
-.header__pictureContainer--background img {
-  width: 100%;
-  height: 100%;
-}
 .header__pictureContainer--mockups {
   position: absolute;
   top: 0;
@@ -143,6 +148,7 @@ button {
   justify-items: center;
   align-content: space-around;
 }
+
 .characteristics {
   width: 100vw;
   padding: 151px 30px;
@@ -233,6 +239,11 @@ button {
   font-size: 1.4rem;
   color: #a5a4a9;
   font-weight: 300;
+}
+.footer .containerDividerButton, .footer .containerDividerLink {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=mobile.css.map */

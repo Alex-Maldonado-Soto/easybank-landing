@@ -44,4 +44,11 @@
     &__copyright {
         @include textAttribute($font-text, 1.4rem, $gray-color, 300);
     }
+
+    .containerDividerButton, .containerDividerLink   {
+        display: grid;
+        gap: 30px;
+        justify-items: center;
+    }
+
 }

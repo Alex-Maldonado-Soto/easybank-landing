@@ -1,0 +1,47 @@
+.footer {
+    background-color: $darkColor;
+    display: grid;
+    gap: 35px;
+    padding: 30px 0px;
+    justify-items: center;
+
+    #logoLetter {
+        fill: #fff;
+    }
+
+    &__listLinks {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 58vw;
+
+        &--items {
+            & a {
+                & figure {
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    &__listNav {
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        gap: 25px;
+
+        &--item {
+            & a {
+                text-decoration: none;
+                @include textAttribute($font-text, 1.6rem, $primary-sure-color, 300);
+            }
+        }
+    }
+
+    &__copyright {
+        @include textAttribute($font-text, 1.4rem, $gray-color, 300);
+    }
+}

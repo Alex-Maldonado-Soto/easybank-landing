@@ -201,4 +201,45 @@ button:hover {
   display: block;
 }
 
+.footer {
+  background-color: #31314c;
+  display: grid;
+  gap: 35px;
+  padding: 30px 0px;
+  justify-items: center;
+}
+.footer #logoLetter {
+  fill: #fff;
+}
+.footer__listLinks {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 58vw;
+}
+.footer__listLinks--items a figure {
+  width: 25px;
+}
+.footer__listNav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  gap: 25px;
+}
+.footer__listNav--item a {
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #f9f9f9;
+  font-weight: 300;
+}
+.footer__copyright {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #a5a4a9;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=desktop.css.map */
