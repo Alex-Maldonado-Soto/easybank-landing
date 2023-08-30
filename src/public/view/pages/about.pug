@@ -5,11 +5,12 @@ section.characteristics
     hgroup.characteristics__titles 
         h2 Why choose Easybank?
         p We levarage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
-    -for (let i = 0; i < 4; i++)
-        .characteristics__cards 
-            figure.characteristics__cards--figure  
-                img(src="images/"+ iconsAbout[i], alt="")
-            h3.characteristics__cards--title=cardNamesAbout[i]
-            p.characteristics__cards--description=cardParrafAbout[i]
+    .characteristics__cardsContainer 
+        -for (let i = 0; i < 4; i++)
+            .characteristics__cards 
+                figure.characteristics__cards--figure  
+                    img(src="images/"+ iconsAbout[i], alt="")
+                h3.characteristics__cards--title=cardNamesAbout[i]
+                p.characteristics__cards--description=cardParrafAbout[i]
 
 

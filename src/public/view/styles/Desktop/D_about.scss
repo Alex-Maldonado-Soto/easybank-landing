@@ -1,0 +1,20 @@
+.characteristics {
+    width: 90vw;
+    padding: 151px 30px;
+    text-align: left;
+
+    p, &__cards--figure {
+        margin: 25px 0px;
+    }
+    &__cardsContainer {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__cards {
+
+    display: grid;
+    justify-items: left;
+
+    }
+}

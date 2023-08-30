@@ -56,6 +56,11 @@ button:hover {
   filter: opacity(60%);
 }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
 .navbar {
   background-color: #fff;
   font-size: 18px;
@@ -103,6 +108,7 @@ button:hover {
 
 .header {
   width: 100vw;
+  height: 700px;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(4, 25%);
@@ -124,14 +130,73 @@ button:hover {
   grid-row: 2/5;
 }
 .header__text {
-  grid-column: 1/4;
-  grid-row: 2/2;
+  grid-column: 1/5;
+  grid-row: 2/3;
   display: grid;
   grid-gap: 20px;
   padding-left: 150px;
   text-align: left;
   justify-items: left;
   align-content: space-around;
+}
+
+.characteristics {
+  width: 90vw;
+  padding: 151px 30px;
+  text-align: left;
+}
+.characteristics p, .characteristics__cards--figure {
+  margin: 25px 0px;
+}
+.characteristics__cardsContainer {
+  display: flex;
+  gap: 50px;
+}
+.characteristics__cards {
+  display: grid;
+  justify-items: left;
+}
+
+.articles {
+  width: 100vw;
+  margin-bottom: 151px;
+}
+.articles__title {
+  text-align: center;
+}
+.articles__cards {
+  width: 100vw;
+  text-align: left;
+}
+.articles__cards--img {
+  margin: 30px;
+  width: 10px;
+}
+.articles__cards--figure {
+  width: 10px;
+}
+.articles__cardsContainer {
+  display: grid;
+  gap: 15px;
+  padding: 0px 55px;
+}
+.articles__cardsContainer--title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: #31314c;
+  font-weight: 300;
+  text-decoration: none;
+}
+.articles__cardsContainer--title:focus {
+  color: #33cf7c;
+}
+.articles__cardsContainer--parraf {
+  font-size: 1.4rem;
+}
+.articles__cardsContainer--creators {
+  font-size: 1rem;
+  color: #a5a4a9;
+  display: block;
 }
 
 /*# sourceMappingURL=desktop.css.map */
