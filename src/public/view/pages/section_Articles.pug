@@ -4,12 +4,13 @@
 -var iconsArticles = ["image-currency.jpg", "image-restaurant.jpg", "image-plane.jpg", "image-confetti.jpg"]
 section.articles
     h2.articles__title Latest Articles
-    -for (let i = 0; i < 4; i++)
-        .articles__cards
-            figure.articles__cards--img
-                img(src="images/"+ iconsArticles[i], alt="")
-            .articles__cardsContainer
-                spam.articles__cardsContainer--creators=cardNamesArticles[i]
-                a(href="http://").articles__cardsContainer--title=cardLinksArticles[i] 
-                p.articles__cardsContainer--parraf=cardParrafArticles[i]
+    .articles__Container
+        -for (let i = 0; i < 4; i++)
+            .articles__cards
+                figure.articles__cards--img
+                    img(src="images/"+ iconsArticles[i], alt="")
+                .articles__cardsContainer
+                    spam.articles__cardsContainer--creators=cardNamesArticles[i]
+                    a(href="http://").articles__cardsContainer--title=cardLinksArticles[i] 
+                    p.articles__cardsContainer--parraf=cardParrafArticles[i]
 

@@ -3,7 +3,13 @@
     margin-bottom: 151px;
 
     &__title {
-        text-align: center;
+        text-align: left;
+        margin-left: 55px;
+        margin-bottom: 100px;
+    }
+
+    &__Container {
+        display: flex;
     }
 
     &__cards {
@@ -11,19 +17,14 @@
         text-align: left;
 
         &--img {
-            margin: 30px;
-            width: 10px;
-        }
-
-        &--figure {
-            width: 10px;
+            padding: 0px 55px;
+            width: 100%;
         }
 
         &Container {
             display: grid;
             gap: 15px;
             padding: 0px 55px;
-
             &--title {
                 @include textAttribute($font-text, 1.8rem, $darkColor, 300);
                 text-decoration: none;
@@ -32,7 +33,7 @@
                     color: $primary-color;
                 }
 
-            }
+            }         
 
             &--parraf {
                 font-size: 1.4rem;

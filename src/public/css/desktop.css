@@ -162,18 +162,20 @@ button:hover {
   margin-bottom: 151px;
 }
 .articles__title {
-  text-align: center;
+  text-align: left;
+  margin-left: 55px;
+  margin-bottom: 100px;
+}
+.articles__Container {
+  display: flex;
 }
 .articles__cards {
   width: 100vw;
   text-align: left;
 }
 .articles__cards--img {
-  margin: 30px;
-  width: 10px;
-}
-.articles__cards--figure {
-  width: 10px;
+  padding: 0px 55px;
+  width: 100%;
 }
 .articles__cardsContainer {
   display: grid;
