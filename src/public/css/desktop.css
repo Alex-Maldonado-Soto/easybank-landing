@@ -108,7 +108,7 @@ button:hover {
 
 .header {
   width: 100vw;
-  height: 700px;
+  height: 575px;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(4, 25%);
@@ -142,7 +142,7 @@ button:hover {
 
 .characteristics {
   width: 90vw;
-  padding: 151px 30px;
+  padding: 25px 30px;
   text-align: left;
 }
 .characteristics p, .characteristics__cards--figure {
@@ -203,10 +203,11 @@ button:hover {
 
 .footer {
   background-color: #31314c;
-  display: grid;
+  display: flex;
   gap: 35px;
   padding: 30px 0px;
-  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .footer #logoLetter {
   fill: #fff;
@@ -215,24 +216,24 @@ button:hover {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  width: 58vw;
+  gap: 20px;
 }
 .footer__listLinks--items a figure {
   width: 25px;
 }
 .footer__listNav {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-  gap: 25px;
+  gap: 35px;
+  justify-items: start;
+  justify-content: space-between;
 }
 .footer__listNav--item a {
   text-decoration: none;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.6rem;
-  color: #f9f9f9;
+  color: #a5a4a9;
   font-weight: 300;
 }
 .footer__copyright {
@@ -240,6 +241,12 @@ button:hover {
   font-size: 1.4rem;
   color: #a5a4a9;
   font-weight: 300;
+}
+.footer .containerDividerButton,
+.footer .containerDividerLink {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=desktop.css.map */

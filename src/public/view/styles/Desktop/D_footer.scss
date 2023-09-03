@@ -1,9 +1,10 @@
 .footer {
     background-color: $darkColor;
-    display: grid;
+    display: flex;
     gap: 35px;
     padding: 30px 0px;
-    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
 
     #logoLetter {
         fill: #fff;
@@ -13,7 +14,7 @@
         list-style: none;
         display: flex;
         justify-content: space-evenly;
-        width: 58vw;
+        gap: 20px;
 
         &--items {
             & a {
@@ -25,18 +26,17 @@
     }
 
     &__listNav {
-
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
         list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        align-items: center;
-        gap: 25px;
-
+        gap: 35px;
+        justify-items: start;
+        justify-content: space-between;
+        
         &--item {
             & a {
                 text-decoration: none;
-                @include textAttribute($font-text, 1.6rem, $primary-sure-color, 300);
+                @include textAttribute($font-text, 1.6rem, $gray-color, 300);
             }
         }
     }
@@ -44,4 +44,12 @@
     &__copyright {
         @include textAttribute($font-text, 1.4rem, $gray-color, 300);
     }
+
+    .containerDividerButton,
+    .containerDividerLink {
+        display: grid;
+        gap: 30px;
+        justify-items: center;
+    }
+
 }

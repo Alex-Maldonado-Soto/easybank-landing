@@ -1,4 +1,5 @@
 -var footerIconsNames = ["facebook", "youtube", "twitter", "pinterest", "instagram"]
+-var footerNavNames = ["About Us", "Contact", "Blog", "Carrers", "Support", "Privacy Policy"]
 
 footer.footer
     .containerDividerLink
@@ -11,9 +12,9 @@ footer.footer
                         figure 
                             img(src="images/icon-"+ footerIconsNames[i]+ ".svg", alt="ir a "+ footerIconsNames[i] + " de easybank")
     ul.footer__listNav
-        each navbar in navbarNavbars
+        each footerNav in footerNavNames
             li.footer__listNav--item
-               a(href="http://")=navbar
+               a(href="http://")=footerNav
     .containerDividerButton
         button.footer__button Request Invite 
         spam.footer__copyright © Easybank. All Rights Reserved
